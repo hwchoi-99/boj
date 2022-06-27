@@ -4,6 +4,8 @@ sys.setrecursionlimit(1000000)
 
 def DFS(v):
 	global cnt
+	# order[cnt] = v로 작성하고 아래에서 거치지 않는 노드를 따로 처리해 주어야 한다고 생각함
+	# https://hueco.tistory.com/196 참고함
 	order[v] = cnt
 	cnt += 1
 	visited[v] = True
